@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy script</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Mono+One&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header class="hud">
+        <p class="score" id="score">0</p>
+        <p class="message" id="message">Pulsa una tecla</p>
+    </header>
+    <main class="container">
+        <section class="obstacle" id="obstacle">
+            <article class="obstacle-top" id="obstacle-top">
+                <div class="obstacle-texture-body"></div>
+                <div class="obstacle-texture-head"></div>
+            </article>
+            <article class="obstacle-bottom" id="obstacle-bottom">
+                <div class="obstacle-texture-head"></div>
+                <div class="obstacle-texture-body"></div>
+            </article>
+        </section>
+        <img src="img/bird.png" class="bird" id="bird"></img>
+    </main>
+    <section class="table-info" id="table-info">
+        <p>Perdiste!</p>
+        <button type="button" id="newgameBtn">Nuevo juego</button>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
